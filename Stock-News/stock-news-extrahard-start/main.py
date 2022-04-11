@@ -1,14 +1,14 @@
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
-api_key_alphavantage = "9RJ7USBED1Q15KGJ"
-newsapi_key = "8c0e4a3b6c9447669ff066b2dfd3ccb3"
+api_key_alphavantage = "vvvvvvvdd"
+newsapi_key = "gggggg"
 import requests
 
 parameters = {
      "function" : "TIME_SERIES_DAILY",
      "symbol" : STOCK,
-     "apikey" : "9RJ7USBED1Q15KGJ",
+     "apikey" : "qqqqqq",
  }
 
 
@@ -50,9 +50,9 @@ else:
 news_content = news_response.json()["articles"][1]["description"]
 
 
-account_sid = "AC7654559c307150ae2c4afc90ae17e2c3"
-auth_token = "a40132edb82649ce8a42e930bb7b0c20"
-phone_no = "+18455236702"
+account_sid = "aasssss"
+auth_token = "aaaaaa"
+phone_no = "ccccccc"
 
 from twilio.rest import Client
 
@@ -63,7 +63,7 @@ message = client.messages \
           .create(
                               body=f"TSLA: {price}\nHeadline:{news_titles[0]}\nBrief:{news_content}",
                               from_=phone_no,
-                              to="+918123789765"
+                              to="xxxx"
           )
 print(message.status)
 
