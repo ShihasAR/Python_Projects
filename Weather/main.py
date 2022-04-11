@@ -1,31 +1,4 @@
-# import csv
-#
-#
-# temperature = []
-# with open("weather_data.csv","r") as data_file:
-#     data = csv.reader(data_file)
-#     for row in data:
-#         if row[1] != "temp":
-#          temperature.append(int(row[1]))
-#
-# print(temperature)
 
-# import pandas
-#
-# data = pandas.read_csv("weather_data.csv")
-#
-# # def avg (lst):
-# #    return sum(lst)/len(lst)
-# #
-# #
-# # data_list = round(avg(data["temp"].to_list()),3)
-# # print(f"average is : {data_list}")
-#
-# monday = data[data.day == "Monday"]
-# temperature = monday.temp
-#
-# temp_F = (temperature*1.8) + 32
-# print(temp_F)
 
 import pandas
 
