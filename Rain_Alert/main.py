@@ -1,16 +1,16 @@
 import requests
 from twilio.rest import Client
 
-account_sid = "AC7654559c307150ae2c4afc90ae17e2c3"
-auth_token = "a40132edb82649ce8a42e930bb7b0c20"
-phone_no = "+18455236702"
-BACK_UP = "0viWVBrTmYX-OfVsZUoZNIYdsdcrzr0Vbt_B17Hm"
+account_sid = "Aqqqq"
+auth_token = "cccccc"
+phone_no = "nnnnn"
+BACK_UP = "qwwqwqwww"
 
 parameters = {
 
    "lat" : 60.391262,
    "lon" : 5.322054,
-   "appid" : "9c73a187212d081309d03718175a05d2",
+   "appid" : "hhhhhhh",
    "exclude" : "current,minutely,daily"
   }
 response = requests.get(url="https://api.openweathermap.org/data/2.5/onecall",params=parameters)
@@ -29,7 +29,7 @@ if will_rain:
           .create(
           body="It's going to rain, carry an umbrella.",
           from_= phone_no,
-          to= "+918123789765",
+          to= "nnmggggg",
       )
       print(message.status)
 
